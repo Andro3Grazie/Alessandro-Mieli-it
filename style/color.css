@@ -1,0 +1,159 @@
+/* removing autocomplete chrome color (doesn't work actually) */
+/* *:-webkit-autofill, 
+*:-webkit-autofill:hover, 
+*:-webkit-autofill:focus, 
+*:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(242, 242, 242) inset !important;
+    -webkit-text-fill-color: #000 !important;
+} */
+                  
+/* ------------------- cookies ------------------- */
+.cc-color-override-183111374 .cc-btn:hover, .cc-color-override-183111374 .cc-btn:focus {
+    color: #363636;
+    opacity: .8;
+}
+.link {
+    color: #7a002f;
+    border-bottom-color: rgba(122, 0, 47,.3);
+}
+.link:hover {
+    color: rgba(122, 0, 47,.6);
+    border-color: rgba(122, 0, 47,.15);
+}
+/* ------------------- navbar ------------------- */
+.navbar-container {
+    background-color: #fff;
+    color: #4d4d4d;
+}
+
+/* ------------------- body ------------------- */
+.section-title {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* ------- separate line between sections ------- */
+.break-sections hr {
+    color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+
+/* title and description */
+.aboutme-text {
+    color: #000;
+}
+
+/* ------- experiences, education, languages, contactme ------- */
+.experiences-subtitle, .education-subtitle, .languages-subtitle, .contactme-name, .contactme-subtitle {
+    color: #484848;
+}
+.experiences-list-item {
+    border-color: #e6e6e6!important;
+}
+.experiences-list-item p a, .education-section a, .contactme-subtitle a {
+    color: #7a002f;
+    border-bottom-color: rgba(122, 0, 47,.3);
+}
+.experiences-list-item p a:hover, .education-section a:hover, .contactme-subtitle a:hover {
+    color: rgba(122, 0, 47,.6);
+    border-color: rgba(122, 0, 47,.15);
+}
+
+/* ------- about me ------- */
+.aboutme-div,
+/* ------- contactme ------- */
+.contactme-subtitle i,
+.contactme-subtitle a,
+/* ------- modal ------- */
+.changeLanTitle i
+{
+    color: #7a002f;
+}
+.contactme-form-div input, .contactme-form-div textarea {
+    border-color: #ccc;
+    background: rgb(242, 242, 242, .6);
+    color: #000;
+}
+input:focus:not(.contactme-form-btn), textarea:focus {
+    border-color: #ccc!important;
+    background: rgb(242, 242, 242, .6)!important;
+    color: #000!important;
+    box-shadow: none!important;
+}
+.contactme-form-btn {
+    color: #fff;
+    background-color: #7a002f;
+    border-color: #7a002f;
+}
+.changeLanButtonEn {
+    color: #fff;
+    background-color: #7a002f!important;
+    border-color: #7a002f!important;
+}
+.changeLanButtonIt {
+    color: rgb(255, 255, 255)!important;
+    background-color: rgb(54, 54, 54)!important;
+    border-color: rgb(54, 54, 54)!important;
+}
+.changeLanButton:hover {
+    color: rgb(255, 255, 255);
+}
+.changeLanClose {
+    color: rgb(54, 54, 54)!important;
+}
+/* ------------------- back to the top button ------------------- */
+#return-to-top {
+    background: rgba(0, 0, 0, 0.7);
+}
+#return-to-top i {
+    color: #fff;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+}
+
+/* ------------------- footer ------------------- */
+.footer {
+    background-color: rgb(242, 242, 242);
+    color: #4d4d4d;
+}
+.contact-icon a {
+    /* color: #000; */
+    color: #7a002f;
+}
+.contact-item-hover {
+    /* color: #575757!important; */
+    color: rgba(122, 0, 47,.6)!important;
+}
+
+
+/* ------------------- media query ------------------- */
+/* large tablet */
+@media screen and (max-width: 992px) {
+/* ------------------- navbar ------------------- */
+    /* navbar, mobile button */
+    .navbar-container,  .navbar-light .navbar-toggler {
+        background-color: rgb(242, 242, 242);
+        border-color: rgb(242, 242, 242);
+    }
+    /* fixed-top */
+    .navbar-fix {
+        background-color: rgb(242, 242, 242);
+        border-color: rgb(242, 242, 242);
+    }
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+
+}
+/* smartphone */
+@media screen and (max-width: 576px) {
+
+}
+/* small smartphone */
+@media screen and (max-width: 343px) {
+
+}
