@@ -1,3 +1,17 @@
+/* -------------------- Daylight or Nighttime -------------------- */
+// (Temporarily Discontinued)
+function checkTime() {
+    currentDate = Math.round(new Date().getTime() / 1000);
+
+    if (currentDate >= alba || currentDate <= tramonto) {
+        // Daylight
+        return true;
+    }
+    else {
+        // Nighttime
+        return false;
+    }
+}
 /* --------------------
 add stylesheet to invert page's colour (functions)
 ---------------------*/
