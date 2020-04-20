@@ -32,7 +32,7 @@
 
         .error-404 {
             font-family: 'Rubik Mono One', sans-serif;
-            color: #4d4d4d;
+            color: #303030;
             cursor: default;
             overflow: hidden;
         }
@@ -50,7 +50,7 @@
         }
 
         .title-zero-animation {
-            color: #4d4d4d;
+            color: #303030;
             z-index: 999;
             opacity: .25;
             animation-name: flicker;
@@ -116,7 +116,7 @@
 
                 <!-- Name -->
                 <div class="navbar-div">
-                    <a class="navbar-brand" href="https://it.alessandromieli.ga/index.html" id="return-to-top-mobile">
+                    <a class="navbar-brand" href="https://it.alessandromieli.ga/" id="return-to-top-mobile">
                         <span class="navbar-title">ALESSANDRO MIELI</span></a>
                     <br>
                     <!-- subtitle -->
@@ -133,8 +133,8 @@
                 <div id="navbarSupportedContent" class="overlay">
                     <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a href="https://it.alessandromieli.ga/index.html" onclick="closeNav()">Home</a>
-                        <a href="https://it.alessandromieli.ga/portfolio.html">Portfolio</a>
+                        <a href="https://it.alessandromieli.ga/" onclick="closeNav()">Home</a>
+                        <a class="disable-link" href="https://it.alessandromieli.ga/portfolio.html">Portfolio</a>
                         <a href="https://it.alessandromieli.ga/contact.html" onclick="closeNav()">Contanct</a>
                     </div>
                 </div>
@@ -143,10 +143,10 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://it.alessandromieli.ga/index.html">HOME</a>
+                            <a class="nav-link" href="https://it.alessandromieli.ga/">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://it.alessandromieli.ga/portfolio.html">PORTFOLIO</a>
+                            <a class="nav-link disable-link" href="https://it.alessandromieli.ga/portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://it.alessandromieli.ga/contact.html">CONTACT</a>
@@ -162,7 +162,7 @@
             <div class="error-404 no-select">
                 <h1 class="title">4<span class="title-zero">0</span>4</h1>
                 <h4 class="subtitle uppercase">Questa pagina non è disponibile</h4>
-                <p class="mt-4">Torna alla <a class="link" href="https://it.alessandromieli.ga/index.html">home</a></p>
+                <p class="mt-4">Torna alla <a class="link" href="https://it.alessandromieli.ga/">home</a></p>
             </div>
         </div> <!-- Body end -->
 
@@ -220,12 +220,6 @@
                 }, 1500);
             }
         }
-
-        // $window.onload(function change() {
-        //     if (checkCountry(country) == 'en') {
-        //         // Replace url and go to italian 404
-        //     }
-        // });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

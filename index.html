@@ -10,25 +10,25 @@
     <!-- Search Engine -->
     <meta name="description"
         content="Ciao sono Alessandro Mieli, questo è il mio curriculum vitae. Sono uno studente di informatica, mi piacciono le sfide e adoro leggere.">
-    <meta name="image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+    <meta name="image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Alessandro Mieli">
     <meta itemprop="description"
         content="Ciao sono Alessandro Mieli, questo è il mio curriculum vitae. Sono uno studente di informatica, mi piacciono le sfide e adoro leggere.">
-    <meta itemprop="image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+    <meta itemprop="image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Alessandro Mieli">
     <meta name="twitter:site" content="https://it.alessandromieli.ga/">
-    <meta name="twitter:image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+    <meta name="twitter:image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <meta name="twitter:description"
         content="Ciao sono Alessandro Mieli, questo è il mio curriculum vitae. Sono uno studente di informatica, mi piacciono le sfide e adoro leggere.">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="Alessandro Mieli">
     <meta property="og:description"
         content="Ciao sono Alessandro Mieli, questo è il mio curriculum vitae. Sono uno studente di informatica, mi piacciono le sfide e adoro leggere.">
-    <meta property="og:image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
-    <meta property="og:url" content="https://alessandromieli.ga/">
+    <meta property="og:image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
+    <meta property="og:url" content="https://it.alessandromieli.ga/">
     <meta property="og:site_name" content="Alessandro Mieli">
     <meta property="og:locale" content="it_IT">
     <meta property="og:type" content="website">
@@ -53,16 +53,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
 
-    <!-- Cookies -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-    <!-- (Temporarily Discontinued) -->
-    <!-- Below will appear/disappear the style to invert color theme -->
 </head>
 
 <body>
     
-    <!-- Modal -->
+    <!-- Modal Change websitte -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -81,42 +76,18 @@
                     Stai visitando questo sito fuori dall'Italia, visitalo nella tua lingua per informazioni più precise e dettagliate.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
-                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/" onclick="setCookie('language', 'en');">Continue in english</a>
-                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal" onclick="setCookie('language', 'it');">Continua in italiano</button>
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/">Continue in english</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continua in italiano</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Cookies -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#363636",
-                    "text": "#ffffff"
-                },
-                "button": {
-                    "background": "#ffffff",
-                    "text": "#363636"
-                }
-            },
-            "theme": "classic",
-            "position": "bottom-right",
-            "content": {
-                "message": "Questo sito utilizza i cookies per migliorare la tua esperienza di navigazione.",
-                "dismiss": "Capito!",
-                "link": "Scopri di più"
-            }
-        });
-    </script>
-
     <!-- Page -->
     <div class="page-container">
         
         <!-- Navbar -->
-        <div class="navbar-container container-lg px-0">
+        <div class="navbar-container container-lg px-0 no-select">
             <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
                 
                 <!-- Name -->
@@ -126,18 +97,6 @@
                     <!-- subtitle -->
                     <span class="navbar-subtitle text-muted uppercase display-none-lg">Studente</span>
                 </div>
-                
-                <!-- HP -->
-                <!-- (Temporarily Discontinued) -->
-                <!-- <div class="navbar-div">
-                    <div class="words center display-none" id="nox" style="color: #fff">
-                        <span>N</span><span>O</span><span>X</span>
-                    </div>
-                    
-                    <div class="words center display-none" id="lumus" style="color: #2d2d2d">
-                        <span>L</span><span>U</span><span>M</span><span>U</span><span>S</span>
-                    </div>
-                </div> -->
 
                 <!-- Mobile button -->
                 <button class="navbar-toggler" type="button">
@@ -499,7 +458,6 @@
 
     <!-- My own JavaScript -->
     <script src="script/functions.js"></script>
-    <script src="script/ipInfo.js"></script>
     <script src="script/reduce-onscroll.js"></script>
 
     <script>
@@ -526,15 +484,12 @@
             }, false);
         })();
         // Modal
-            function checkLan(country) {
-                // Check if language preference is saved in cookies
-                var lan = getCookie("language");
-
-                if (!lan && country != 'IT') {
-                    // Launch modal to change language
-                    $('#myModal').modal('toggle');
-                }
+        function changeLanSite(countryName) {
+            if(countryName != 'IT') {                
+                // Launch modal to change language
+                $('#myModal').modal('toggle');
             }
+        }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

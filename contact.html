@@ -9,25 +9,25 @@
 
     <!-- Search Engine -->
     <meta name="description"
-        content="Hi I'm Alessandro Mieli, over here is where you can contact me.">
-    <meta name="image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+        content="Ciao Alessandro Mieli, qui è dove puoi contattarmi.">
+    <meta name="image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Contact — Alessandro Mieli">
     <meta itemprop="description"
-        content="Hi I'm Alessandro Mieli, over here is where you can contact me.">
-    <meta itemprop="image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+        content="Ciao Alessandro Mieli, qui è dove puoi contattarmi.">
+    <meta itemprop="image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact — Alessandro Mieli">
     <meta name="twitter:site" content="https://it.alessandromieli.ga/contact.html">
-    <meta name="twitter:image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+    <meta name="twitter:image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <meta name="twitter:description"
-        content="Hi I'm Alessandro Mieli, over here is where you can contact me.">
+        content="Ciao Alessandro Mieli, qui è dove puoi contattarmi.">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="Contact — Alessandro Mieli">
     <meta property="og:description"
-        content="Hi I'm Alessandro Mieli, over here is where you can contact me.">
-    <meta property="og:image" content="https://it.alessandromieli.ga/imgs/preview-image.png">
+        content="Ciao Alessandro Mieli, qui è dove puoi contattarmi.">
+    <meta property="og:image" content="https://it.alessandromieli.ga/imgs/preview-image.jpg">
     <meta property="og:url" content="https://it.alessandromieli.ga/contact.html">
     <meta property="og:site_name" content="Contact — Alessandro Mieli">
     <meta property="og:locale" content="it_IT">
@@ -53,15 +53,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
 
-    <!-- Cookies -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-    <!-- Below will appear/disappear the style to invert color theme -->
 </head>
 
 <body>
 
-    <!-- Modal -->
+    <!-- Modal Change websitte -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -74,47 +70,23 @@
                     <h5 class="modal-title changeLanTitle" id="exampleModalLongTitle"><i class="fas fa-globe-americas fa-3x"></i></h5>
                 </div>
                 <div class="modal-body text-center">
-                    Stai visitando questo sito dall'Italia, visitalo nella tua lingua per informazioni più precise e dettagliate.
+                    Are you visiting this website from outside Italy? Visit your language site for more detailed information.
                     <br>
                     <br>
-                    Are you visiting this website from Italy? Visit your language site for more detailed information.
+                    Stai visitando questo sito fuori dall'Italia, visitalo nella tua lingua per informazioni più precise e dettagliate.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
-                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/contact.html" onclick="setCookie('language', 'en');">Continue in english</a>
-                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal" onclick="setCookie('language', 'it');">Continua in italiano</button>
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/contact.html">Continue in english</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continua in italiano</button>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- Cookies -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#363636",
-                    "text": "#ffffff"
-                },
-                "button": {
-                    "background": "#ffffff",
-                    "text": "#363636"
-                }
-            },
-            "theme": "classic",
-            "position": "bottom-right",
-            "content": {
-                "message": "Questo sito utilizza i cookies per migliorare la tua esperienza di navigazione.",
-                "dismiss": "Capito!",
-                "link": "Scopri di più"
-            }
-        });
-    </script>
-    
     <div class="page-container">
         
         <!-- Navbar -->
-        <div class="navbar-container container-lg px-0">
+        <div class="navbar-container container-lg px-0 no-select">
             <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
                 
                 <!-- Name -->
@@ -259,7 +231,6 @@
     <!-- My own JavaScript -->
     <!-- My own JavaScript -->
     <script src="script/functions.js"></script>
-    <script src="script/ipInfo.js"></script>
     <script src="script/reduce-onscroll.js"></script>
 
     <script>
@@ -286,11 +257,8 @@
             }, false);
         })();
         // Modal
-        function checkLan(country) {
-            // Check if language preference is saved in cookies
-            var lan = getCookie("language");
-
-            if (!lan && country != 'IT') {
+        function changeLanSite(countryName) {
+            if(countryName != 'IT') {                
                 // Launch modal to change language
                 $('#myModal').modal('toggle');
             }
