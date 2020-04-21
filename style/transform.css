@@ -23,6 +23,9 @@
     pointer-events: none;
     cursor: default;
 }
+.c-pointer {
+    cursor: pointer;
+}
 .c-pointer:hover {
     cursor: pointer;
 }
