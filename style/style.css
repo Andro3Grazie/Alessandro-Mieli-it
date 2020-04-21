@@ -242,6 +242,9 @@
     height: 204px;
     width: 100%;
 }
+.contact-icon {
+    cursor: pointer;
+}
 
 /* ------------------- media query ------------------- */
 /* large tablet */

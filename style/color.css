@@ -120,7 +120,7 @@ input:focus:not(.contactme-form-btn), textarea:focus {
     background-color: rgb(242, 242, 242);
     color: #4d4d4d;
 }
-.contact-icon a {
+.contact-icon a, .contact-icon  {
     /* color: #000; */
     color: #7a002f;
 }

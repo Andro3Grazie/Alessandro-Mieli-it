@@ -57,7 +57,7 @@
 
 <body>
     
-    <!-- Modal Change websitte -->
+    <!-- Modal Change website -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -74,6 +74,32 @@
                     <br>
                     <br>
                     Stai visitando questo sito fuori dall'Italia, visitalo nella tua lingua per informazioni più precise e dettagliate.
+                </div>
+                <div class="modal-footer border-none m-auto pt-0">
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/">Continue in english</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continua in italiano</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Change website language -->
+    <div class="modal fade" id="LanModal" tabindex="-1" role="dialog" aria-labelledby="LanModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-none pb-0 float-right">
+                    <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="changeLanClose">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-header border-none m-auto p-0">
+                    <h5 class="modal-title changeLanTitle" id="exampleModalLongTitle">
+                        Scegli la lingua
+                    </h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    Selezionando una lingua, quest'ultima insieme ai contenuti del sito saranno modificati.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
                     <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://alessandromieli.ga/">Continue in english</a>
@@ -435,10 +461,15 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
-                <li class="list-inline-item contact-icon">
+                <!-- <li class="list-inline-item contact-icon">
                     <a href="mailto:alessandromieli.0901@gmail.com" target="_blank" id="contact-item-c" class="">
                         <i class="far fa-envelope"></i>
                     </a>
+                </li> -->
+                <li class="list-inline-item contact-icon">
+                    <span  onclick="$('#LanModal').modal('toggle');" id="contact-item-c" class="">
+                        <i class="fas fa-globe"></i>
+                    </span>
                 </li>
             </ul>
         </footer>

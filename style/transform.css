@@ -23,6 +23,9 @@
     pointer-events: none;
     cursor: default;
 }
+.c-pointer:hover {
+    cursor: pointer;
+}
 /* media query */
 
 /* large tablet */
