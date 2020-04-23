@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /style/
 Disallow: /script/
-Disallow: /404.html
 
 Sitemap: https://alessandromieli.ga/sitemap.xml
