@@ -25,18 +25,26 @@ function closeNav() {
 
 /* -------------------- Change color on contact link hover -------------------- */
 $(document).ready(function () {
-    $('#contact-item-a').hover(function () {
+    $('#contact-item-a').hover(function () { //Hover instagram
         $('#contact-item-b').toggleClass('contact-item-hover');
         $('#contact-item-c').toggleClass('contact-item-hover');
+        $('#contact-item-d').toggleClass('contact-item-hover');
     }),
-        $('#contact-item-b').hover(function () {
-            $('#contact-item-a').toggleClass('contact-item-hover');
-            $('#contact-item-c').toggleClass('contact-item-hover');
-        }),
-        $('#contact-item-c').hover(function () {
-            $('#contact-item-a').toggleClass('contact-item-hover');
-            $('#contact-item-b').toggleClass('contact-item-hover');
-        });
+    $('#contact-item-b').hover(function () { //Hover Linkedin
+        $('#contact-item-a').toggleClass('contact-item-hover');
+        $('#contact-item-c').toggleClass('contact-item-hover');
+        $('#contact-item-d').toggleClass('contact-item-hover');
+    }),
+    $('#contact-item-c').hover(function () { //Hover globe
+        $('#contact-item-a').toggleClass('contact-item-hover');
+        $('#contact-item-b').toggleClass('contact-item-hover');
+        $('#contact-item-d').toggleClass('contact-item-hover');
+    }),
+    $('#contact-item-d').hover(function () { //Hover Amazon ref
+        $('#contact-item-a').toggleClass('contact-item-hover');
+        $('#contact-item-b').toggleClass('contact-item-hover');
+        $('#contact-item-c').toggleClass('contact-item-hover');
+    });
 });
 
 /* -------------------- Scroll to Top Button -------------------- */
